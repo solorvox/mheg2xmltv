@@ -1,0 +1,121 @@
+# mheg2xmltv NZ Freeview Data 20100501
+#<series name>|<thetvdb.com ID>|<freeview show CRID number>|<categories Drama,Series,News,etc>|
+Grand Designs|79264|28101|Series|
+The Big Bang Theory|80379|1006620|Series,Comedy|
+All New The Big Bang Theory|80379|1006620|Series,Comedy|
+The Simpsons|71663|20920,20921,20922,20923,28259|Series,Comedy|
+Nip/Tuck|72201|1006613|Series,Drama|
+Criminal Minds|75710|1006579,1008268|Series,Drama,Crime|
+My Wife And Kids|70329|1006425|Series,Comedy|
+America's Next Top Model|71721|27654,28228,30650|Series,Reality|
+24|76290|1008624,30759,32720|Series,Drama|
+The Cleveland Show|93991|30733|Series,Comedy|
+South Park|75897|-1|Series,Comedy|
+Mythbusters|73388|103188,104420|Series,Documentary|
+Sea Patrol|80546|120518|Series,Drama|
+Relocation Relocation|81272|1008248|Series,Reality|
+Underbelly: The Golden Mile|81346|32700|Series|
+I Shouldn't Be Alive|80983|1008647|Series,Documentary|
+Eleventh Hour|76945|1006591|Series|
+MasterChef New Zealand|139511|-1|Series,Reality|
+McLeod's Daughters|76532|1002052|Series,Drama|
+Dr Phil|71424|28229,30654|Series,Talk|
+Trauma|94541|30800|Series,Drama|
+Numb3rs|73918|25444|Series,Drama|
+Skins|79773|28703|Series,Drama|
+30 Rock|79488|30795|Series,Comedy|
+How I Met Your Mother|75760|24063|Series,Comedy|
+Everybody Hates Chris|75914|27077|Series,Comedy|
+Lie To Me|83602|-1|Series,Drama|
+FlashForward|84024|1008270|Series,Drama|
+CSI: Crime Scene Investigation|72546|30608|Series,Crime|
+CSI: New York|-1|-1|Series,Crime|
+House|73255|30774|Series,Drama|
+Desperate Housewives|73800|1008269|Series,Drama|
+NCIS: Los Angeles|95441|30693|Series,Crime|
+Bones|75682|30760|Series,Drama|
+Grey's Anatomy|73762|1008274|Series,Drama|
+Lost|73739|1008277|Series,Drama|
+Two And A Half Men|72227|1006651|Series,Comedy|
+Brothers And Sisters|79506|1008265|Series,Drama|
+Vanished|79332|25283|Series,Drama|
+Magnum|74380|29584,29585|Series,Drama|
+Everybody Loves Raymond|73663|20490,21110,23118|Series,Comedy|
+Modern Family|95011|30734|Series,Comedy|
+Oprah|75010|28231,30652|Series,Talk|
+Frasier|77811|28466,28466A,28467|Series,Comedy|
+King Of The Hill|73903|26994|Series,Comedy|
+Pimp My Ride|74210|23015|Series,Reality|
+Malcolm In The Middle|73838|20528,22033|Series,Comedy|
+Heroes|79501|28270|Series,Drama|
+Family Guy|75978|22355,23525|Series,Comedy|
+American Dad|73141|28250|Series,Comedy|
+Nitro Circus|85031|31826|Series|
+The Dudesons|81955|28181|Series|
+Beverly Hillbillies|71471|-1|Series,Comedy|
+The Protectors|75124|-1|Series|
+Chuck|80348|1006588|Series,Comedy|
+Man Vs Wild|117451|-1|Series,Documentary|
+Castle|83462|1010443|Series,Crime|
+Doctor Who|-1|-1|Series,Scifi|
+Shortland Street|-1|-1|Series,Soaps|
+Coronation Street|-1|-1|Series,Soaps|
+Campbell Live|-1|-1|Talk|
+Close Up|-1|-1|Talk|
+Wipeout|-1|-1|Series,Game|
+Wipeout Australia|-1|-1|Series,Game|
+Survivor: Redemption Island|-1|-1|Series,Reality|
+That '70s Show|-1|-1|Series,Comedy|
+Friends|-1|-1|Series,Comedy|
+Rachael Ray|-1|-1|Talk|
+America's Funniest Home Videos|-1|-1|Series,Comedy|
+Home And Away|-1|-1|Series,Soaps|
+Glee|-1|-1|Series|
+American Idol|-1|-1|Series,Reality|
+Home Improvement|-1|-1|Series,Comedy|
+CSI|-1|-1|Series,Crime|
+BBC World|-1|-1|News|
+Knight Rider|-1|-1|Series,Drama|
+Come Dine With Me|-1|-1|Series,Reality|
+Mayday|-1|-1|Series,Documentary|
+Neighbours|-1|-1|Series,Soaps|
+Scrubs|-1|-1|Series,Comedy|
+Tyra|-1|-1|Talk|
+The Dr Oz Show|-1|-1|Talk,Health|
+Jeremy Kyle|-1|-1|Talk|
+SVU: Special Victims Unit|-1|-1|Series,Crime|
+Spongebob Squarepants|-1|-1|Children|
+Hell's Kitchen|-1|-1|Series,Reality,Cooking|
+Fair Go|-1|1011545|Talk|
+Packed To The Rafters|-1|1009764|Series,Soaps|
+The Mentalist|-1|-1|Series,Crime|
+Emmerdale|-1|-1|Series,Soaps|
+Breakfast|-1|-1|News|
+Good Morning|-1|1011347|News,Talk|
+AMP Buisness|-1|-1|Business|
+Cougar Town|-1|-1|Series,Comedy|
+All New Two And A Half Men|-1|-1|Series,Comedy|
+Nightline|-1|-1|News|
+Dateline|-1|-1|News|
+Wife Swap|-1|-1|Reality|
+Entertainment Tonight|-1|-1|News|
+Smallville|-1|-1|Series,Scifi|
+Supernatural|-1|-1|Series,Scifi|
+Grand Designs Australia|-1|-1|Series,Documentary|
+All New AFHV|-1|-1|Comedy|
+Law & Order|-1|29100|Series,Crime|
+Late Late Show|-1|-1|Comedy|
+The Tonight Show|-1|-1|Comedy|
+NCIS: LA|-1|-1|Series,Crime|
+Major Crimes|-1|-1|Series,Crime|
+Family Feud|-1|-1|Game|
+Jeopardy|-1|-1|Game|
+Tipping Point|-1|-1|Game|
+The Ellen DeGeneres Show|-1|-1|Talk|
+Paul Henry|-1|-1|Talk|
+Sesame Street|-1|-1|Children|
+Seven Sharp|-1|-1|Talk|
+Restoration Man|-1|-1|How-To|
+The Chase|-1|122270325|Game|
+Q+A|-1|21489|Talk
+

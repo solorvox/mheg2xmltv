@@ -1,0 +1,126 @@
+mheg2xmltv
+Copyright 2010-2016 by Solorvox <solorvox@epic.geek.nz>
+Latest version: http://sourceforge.net/projects/mheg2xmltv/
+
+-----------------------------------------------------------------
+Contents:
+
+1.0 - About
+1.1 - Redbutton-download
+1.2 - mheg2xmltv Setup
+1.3 - Listing metadata / categories
+1.4 - Additional Tools
+
+-----------------------------------------------------------------
+
+-------------
+1.0 - About
+
+A utility to convert MHEG-5 data to an XMLTV file to importing into mythtv for
+extended program guide listings.
+
+-------------
+1.1 - Redbutton-download
+
+You need a copy of redbutton-download, not browser, that can be found
+at http://sourceforge.net/projects/redbutton/files/
+
+After compiling, create your channels.conf.  Follow the documentation provided
+by rb-download.  
+
+Just as a tip, you'll need a channels.conf file made using dvbscan (or just scan 
+depending on distro) using a base file.  For Christchurch I used:
+
+scan chch > ~/.tzap/channels.conf
+
+-- Cut chch --
+# Multiplex DA
+T 562000000 8MHz 3/4 NONE QAM64 8k 1/16 NONE
+# Multiplex DB
+T 578000000 8MHz 3/4 NONE QAM64 8k 1/16 NONE
+# Multiplex DC
+T 594000000 8MHz 3/4 NONE QAM64 8k 1/16 NONE
+-- Cut --
+
+Find your correct values here: 
+
+http://en.wikipedia.org/wiki/Freeview_%28New_Zealand%29#Terrestrial_transmitters
+
+By default, the service ID for New Zealand is 1200 for Channel TVONE.  If you need
+to tune your adpater, try using ivtv-tune part of ivtv-utils package on Debian.
+
+ivtv-tune --freqtable=newzealand --channel=1 --device=/dev/video1
+or 
+ivtv-tune --frequency=45.250 --device=/dev/video1 
+
+Included in the mheg2xmltv/tools directory is a helper script, mheg5grab.sh.
+It will assist in downloading MHEG5 data by only running rb-download for a few seconds.
+It should be run once per day from cron.  Check the configuration in the script and change
+for you setup.  You will need to add an entry to cron.  For example, to run at 02:07AM every day:
+
+07 02 * * * /home/user/mheg2xmltv/tools/mheg5grab.sh
+
+-------------
+1.2 - mheg2xmltv Setup
+
+You can either directly edit mheg2xmltv.sh and change the default values, or
+pass them via command line arguments.  It is important to set your source directory
+where rb-download downloaded the MHEG data.  Additonal, you may override default values on
+the command line.  For example, the default channel mapping is included inside the main file.
+However, you may pass a map file as "mheg2xmltv -c /path/map" for your own custom mapping.  Follow
+the example format included in the mheg2xmltv.sh file.
+
+-------------
+1.3 - Listing metadata / categories
+
+Version 0.3.5 adds a new feature to "guess" the show categories by looking at keywords in title and descriptions. 
+To enable this feature, you must add -g to the command line.
+
+The order of which categories are assigned are as follows:
+
+1) MHEG2 catgegory data found
+2) series-metadata.txt match found via series ID number (use tools/mhegshowid to find ID numbers)
+3) series-metadata.txt match found via title match (exact match only so "CIS" won't match "CSI: New York")
+4) If "guess" mode was enabled with "-g", keyword matching is done with title and description
+
+If at any point a match is found, processing stops.  So if you do not agree/like the -g mode, you may over-ride
+the data by placing the desired information in series-metadata.txt.
+
+-------------
+1.4 - Additional Tools
+
+Basic tools have been included in the tools/ subdirectory.  They are not a required for mheg2xmltv,
+but are provided as additional utilities.  The $BASE directory variable should be changed to match
+the source directory.
+
+mhegshowid - Returns the CRID show ID numbers found
+	examples:
+	$ mhegshowid "House"
+	30774
+	$ mhegshowid "The Pacific"
+	1006745
+
+mhegsearch - Finds strings matching anywhere in the listing
+	example:	
+	$ mhegshowid fire
+	7|28800|32400|1|08:00|49|/T254983|Magnum, P.I.|'Solo Flight'. Fired from a case...<cut>
+	(Matched "Fired" in the description.)
+			
+mhegview   - Converts MHEG data to human readable format
+	example:
+	$ mhegview /carousels/1002/1/dir-31-3030366f
+	24|77400|81000|1|21:30|49|/SNZ10189342|Sea Patrol|It's a day the crew of ...<cut> 
+
+	* This script is needed by others.
+
+mhegtitle  - Matches only titles that start with string
+	example:
+	$ mhegtitle House
+	28|73800|77400|1|20:30|49|/T284056|House|A high-school senior blacks out ...<cut>
+
+	Note: This only matches titles that start with the string. 	
+	* This script is required by others.
+
+mheg5grab.sh - Wrapper/helper script to assist in downloading MHEG5 data using rb-download.
+	See setup notes above for details.  Does not take any arguments or return any output
+	on normal operation.

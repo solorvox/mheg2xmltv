@@ -1,0 +1,22 @@
+0.4.0 Changed default method for channel ID to use "ServiceID" instead of crid://<uri> because TVNZ duplicated crid for more than one channel.  Added service ID (eg 1200 for TV One) to the channel data.  Improved feedback from tool scripts.  Improved listing category guess detection and more series metadata added.  Fixed tools for better recursive search of data directory. (20161031)
+
+0.3.6 Added new channel mappings, removed TV7, updated install docs. (20120724)
+
+0.3.5 Fixed another bug with multi-day listings to merge shows, added new logic to "guess" at categories of show based on keywords in title and description fields, added lots of new shows to series-categories.txt (20110525)
+
+0.3.4 Fixed tracker bug 3153962 with greedy sed channel remap. (20110525)
+
+0.3.3 Updated new stations Trackside, Stratos, U, and FOUR, removed channels that no longer exist (TV6 and FreeviewHD Demo) (20110525)
+
+0.3.2 Thanks to David Moore <dmoo1790@ihug.co.nz> for code fixing programs running across midnight, and bug with tool script to kill rb-download child process.  Added new command line option, -c,  for external custom channel map file.  (20100711)
+ 
+0.3.1 Added wrapper script (in tools/) to assist with MHEG5 data downloading.  Updated documentation. (20100607)
+
+0.3.0 Added additional metadata file for show category information.  Added CRID event ID number as xmltv episode-number.  Added utilties in tools/, they are not required for mheg2xmltv.  Added support for dolby audio. (20100501)
+
+0.2.0 Added support for channel id remapping, channel icons, and added channel definition to top of xmltv output. (20100430)
+
+0.1.1 Fixed issue with duplicate CRIDs mapped to same channel id. (20100430)
+
+0.1.0 First public release (20100429)
+
