@@ -1,0 +1,26 @@
+#!/bin/bash
+# MHEG2XMLTV - Tools
+# Copyright (C) 2010-2016  Solorvox <solorvox@epic.geek.nz>
+# 
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+if [ "$1" == "" ]; then
+        echo "Usage: $0 <filename>
+        Converts MHEG data stream to human readable format.  
+        Field seperator is | (\\x7c)"
+        exit
+fi
+
+# Convert to ASCII human readable format
+sed 's/\x1d/|/g;s/[\x0a\x0d]/ /g;s/\x1c/\n/g;s/\x00//g' "$1"
+# Add extra cr for last row
+echo
+

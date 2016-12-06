@@ -1,0 +1,28 @@
+#!/bin/bash
+# MHEG2XMLTV - Tools
+# Copyright (C) 2010-2016  Solorvox <solorvox@epic.geek.nz>
+# 
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+
+BASE="$HOME/mheg/services"
+
+if [ "$1" == "" ]; then
+	echo "Usage: $0 \"search string\"
+	Prints all listings that contain \"search string\", case insensitive.
+	Match can be anywhere in the listing, title, description, etc."
+	exit
+fi
+
+for file in $(find $BASE -follow -wholename \*/data/\* -type f)
+do
+	mhegview $file | egrep -i --color=tty "$1"
+done
+
