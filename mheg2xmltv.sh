@@ -1,7 +1,7 @@
 #!/bin/bash
 # MHEG2XMLTV - Freeview DVB-T MHEG to XMLTV EPG converter
-# Version: 0.4.0  20161030
-# Copyright (C) 2010-2016  Solorvox <solorvox@epic.geek.nz>
+# Version: 0.5.0  20171130
+# Copyright (C) 2010-2017  Solorvox <solorvox@epic.geek.nz>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -145,7 +145,7 @@ if [ "$TMP_STAGE1" == "" -o "$TMP_STAGE2" == "" -o "$TMP_STAGE3" == "" ]; then
 fi
 
 # Default BASE="$SOURCE_DIR/services/$SERVICE_ID/epg/data"
-BASE="$SOURCE_DIR/services/$SERVICE_ID/epg/data"
+BASE="$SOURCE_DIR/services/$SERVICE_ID/epgdtt/data"
 
 if [ \! -d "$BASE" ]; then
 	echo "ERROR: Source directory [$SOURCE_DIR] does not contain expected data, aborting conversion."

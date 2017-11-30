@@ -1,3 +1,5 @@
+0 5.0 Updated expected directory to match new format from epg/data to epgdtt/data (20171130)
+
 0.4.0 Changed default method for channel ID to use "ServiceID" instead of crid://<uri> because TVNZ duplicated crid for more than one channel.  Added service ID (eg 1200 for TV One) to the channel data.  Improved feedback from tool scripts.  Improved listing category guess detection and more series metadata added.  Fixed tools for better recursive search of data directory. (20161031)
 
 0.3.6 Added new channel mappings, removed TV7, updated install docs. (20120724)
